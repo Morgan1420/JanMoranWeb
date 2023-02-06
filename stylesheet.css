@@ -38,7 +38,7 @@ nav ul li{
 
 nav ul li a{
     color: black;
-    font-size: 17px;
+    font-size: 20px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
@@ -60,21 +60,22 @@ h2{
     margin-left: 2%;
 }
 
-body ul{
+
+
+
+ul.contact_list{
     margin-top: 20px;
     margin-left: 3%;
 }
 
-body ul li{
+ul.contact_list li{
+    margin-left: 15px;
     margin-top: 10px;
 }
 
-body ul li a{
+ul.contact_list li a, ul.contact_list li a:link{
     font-size: 20px;
     margin-left: 15px;
-    margin-bottom: 10px;
+    color: rgb(0, 0, 0); 
 }
 
-body ul li img{
-    border-top: 50px;
-}
