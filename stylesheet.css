@@ -63,17 +63,17 @@ h2{
 
 
 
-ul.contact_list{
+ul.contact_list, ul.project_list{
     margin-top: 20px;
     margin-left: 3%;
 }
 
-ul.contact_list li{
+ul.contact_list li, ul.project_list li{
     margin-left: 15px;
     margin-top: 10px;
 }
 
-ul.contact_list li a, ul.contact_list li a:link{
+ul.contact_list li a, ul.contact_list li a:link, ul.project_list li a, ul.project_list li a:link{
     font-size: 20px;
     margin-left: 15px;
     color: rgb(0, 0, 0); 
