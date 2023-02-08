@@ -1,27 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" onclick="Jump()">
+    <!--- HEADER --->
     <head>
         <meta charset="utf-8">
         <title>Jan Moran/dino-game</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="StyleSheet" href="stylesheet.css">
+        <link rel="StyleSheet" href="../stylesheet.css">
     </head>
     
+    <!-- BODY -->
     <body>
+        <!-- NAVIGATION BAR-->
         <nav>
             <label class="logo">JMR</label>
             <ul>
-                <li><a calss="active" href="main.html">Home</a></li>
+                <li><a calss="active" href="../main.html">Home</a></li>
                 <li><a href="">Sobre mi</a></li>
-                <li><a href="projects.html">Projectes</a></li>
-                <li><a href="contact.html">Contacte</a></li>
+                <li><a href="../projects.html">Projectes</a></li>
+                <li><a href="../contact.html">Contacte</a></li>
 
             </ul>
         </nav>
     
+        <div id="dino_game">
+            <div id="dino"></div>
+            <div id="cactus"></div>
+        </div>
+
+
+
+
     </body>
 
-
-
+    <!-- LINK TO JS SCRIPT -->
+    <script src="game_dino.js"></script>
 
 </html>
