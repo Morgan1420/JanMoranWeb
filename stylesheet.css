@@ -49,6 +49,7 @@ a.active, nav ul li a:hover{
     transition: .5s;
 }
 
+/*  headers  */
 h1{
     margin-top: 50px;
     margin-left:  41%;
@@ -61,21 +62,65 @@ h2{
 }
 
 
+/*  lists  */
 
-
-ul.contact_list{
+ul.contact_list, ul.project_list{
     margin-top: 20px;
     margin-left: 3%;
 }
 
-ul.contact_list li{
+ul.contact_list li, ul.project_list li{
     margin-left: 15px;
     margin-top: 10px;
 }
 
-ul.contact_list li a, ul.contact_list li a:link{
+ul.contact_list li a, ul.contact_list li a:link, ul.project_list li a, ul.project_list li a:link{
     font-size: 20px;
     margin-left: 15px;
     color: rgb(0, 0, 0); 
+}
+
+/* DINO GAME*/
+
+#dino_game{
+    width: 1500px;
+    height: 600px;
+    border-bottom: 1px solid black;
+    margin-left: 10%;
+}
+
+#dino{
+    width: 60px;
+    height: 120px;
+    position: relative;
+    top: 475px;
+}
+.animate{ 
+    animation: jump 500ms;
+}
+
+@keyframes jump{
+    0%{top: 450px;}
+    30%{top: 300px;}
+    70%{top: 300px;}
+    100%{top: 450px;}
+}
+
+#cactus{
+    width: 60px;
+    height: 90px;
+    position: relative;
+    top: 385px;
+    left: 1440px;
+}
+
+.cactus_movement{
+    animation: cactus_movement 1s infinite linear;
+}
+
+
+@keyframes cactus_movement{
+    0%{left:1440px;}
+    100%{left:-40px;}
 }
 
