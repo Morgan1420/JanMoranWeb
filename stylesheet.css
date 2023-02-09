@@ -85,15 +85,15 @@ ul.contact_list li a, ul.contact_list li a:link, ul.project_list li a, ul.projec
 #dino_game{
     width: 1500px;
     height: 600px;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-left: 10%;
 }
 
 #dino{
     width: 60px;
-    height: 150px;
-    background-color: red;
+    height: 120px;
     position: relative;
-    top: 450px;
+    top: 475px;
 }
 .animate{ 
     animation: jump 500ms;
@@ -108,16 +108,18 @@ ul.contact_list li a, ul.contact_list li a:link, ul.project_list li a, ul.projec
 
 #cactus{
     width: 60px;
-    height: 60px;
-    background-color: blue;
+    height: 90px;
     position: relative;
-    top: 390px;
+    top: 385px;
     left: 1440px;
-    animation: cactus 1s infinite linear;
+}
+
+.cactus_movement{
+    animation: cactus_movement 1s infinite linear;
 }
 
 
-@keyframes cactus{
+@keyframes cactus_movement{
     0%{left:1440px;}
     100%{left:-40px;}
 }
