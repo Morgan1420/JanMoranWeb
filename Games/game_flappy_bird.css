@@ -1,0 +1,106 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: calibri;
+}
+
+/* WEBSITE BASICS - NAV BAR*/
+nav {
+    height: 80px;
+    width: 100%;
+    background: rgb(179, 179, 179);
+}
+
+label.logo{
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 80px;
+    padding: 0 100px;
+    font-style: italic;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 8px;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active, nav ul li a:hover{
+    background-color: rgb(197, 197, 197);
+    transition: .5s;
+}
+
+/*  headers  */
+h1{
+    margin-top: 50px;
+    margin-left:  41%;
+}
+
+h2{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 2%;
+}
+
+
+/*  lists  */
+
+ul.contact_list, ul.project_list{
+    margin-top: 20px;
+    margin-left: 3%;
+}
+
+ul.contact_list li, ul.project_list li{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+ul.contact_list li a, ul.contact_list li a:link, ul.project_list li a, ul.project_list li a:link{
+    font-size: 20px;
+    margin-left: 15px;
+    color: rgb(0, 0, 0); 
+}
+
+/*FLAPPY BIRD*/
+
+#game {
+    width: 500px;
+    height: 700px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#block{
+    width: 50px;
+    height: 700px;
+    background-color: black;
+    position: relative;
+    left: 500px;
+}
+
+@keyframes block_movement{
+    0%{left:500px;}
+    100%{left:0px;}
+}
