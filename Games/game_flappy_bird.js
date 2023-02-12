@@ -2,19 +2,31 @@ var block = document.getElementById("block");
 var hole = document.getElementById("hole");
 var bird = document.getElementById("bird");
 var jumping = 0;
-
+var counter = 0;
 
 hole.addEventListener('animationiteration', () => {
 
     var random = -((Math.random() * 300) + 150);
     hole.style.top = random + "px";
-
+    counter++;
 });
 
 setInterval(function(){
     var birdTop = parseInt(window.getComputedStyle(bird).getPropertyValue("top"));
     if(jumping == 0){
         bird.style.top = (birdTop + 3) + "px";
+    }
+    
+    var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
+    var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
+    var birdTop = parseInt(window.getComputedStyle(bird).getPropertyValue("top"));
+    var cTop = -(800-birdTop);
+
+    if((birdTop > 810) || ((blockLeft<20) && (blockLeft>-50) && ((cTop < holeTop + 10) || (cTop >holeTop+150))))        
+    {
+        alert("Game Over. Score: " + counter);
+        bird.style.top = 200 + "px";
+        counter = -1;
     }
 }, 10)
 
