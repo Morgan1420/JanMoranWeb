@@ -43,5 +43,5 @@ function Jump()
             jumpCount = 0;
         }
         jumpCount++;
-    }, 10)
+    }, 10) 
 }
